@@ -1,0 +1,59 @@
+html{
+    font-size: clamp(1rem, calc(0.5rem + 0.8vw), 4rem);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header{
+    text-align: center;
+    padding: 3vw 5vw 3vw 5vw;
+
+    nav li{
+        margin: 10px;
+    }
+
+    .fonte-amarelo{
+        color: #FBBC05;
+        padding: 5px;
+    }
+    .botao-amarelo a{
+        color: #fff;
+        background-color: #FBBC05;
+        padding: 10px 20px;
+        border-radius: 8px;
+        margin: 2vw;
+    }
+    .botao-amarelo a:hover{
+        background-color: #ffd148;
+    }
+}
+
+/* === banner === */
+
+main section.banner{
+    background: url(../images/background-banner.png) no-repeat;
+    background-size: 100% auto;
+}
+
+@media only screen and (min-width: 600px){
+    header{
+        font-size: 0.9rem;
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+
+            ul{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        }
+        .botao-amarelo a{
+            padding: 16px 30px;
+        }
+        .fonte-amarelo{
+            margin: 0 -15px;
+        }
+        
+    }
+}
